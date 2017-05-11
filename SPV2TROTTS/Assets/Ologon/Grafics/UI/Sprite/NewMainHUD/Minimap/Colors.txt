@@ -1,0 +1,7 @@
+Blue Planet: R0G93B127 (005d7f)
+
+Red Planet: R140GB24 (8c0818)
+
+Blue Ship: R0G187B255 (00bbff)
+
+Red Ship: R255G0B26 (ff001a)
