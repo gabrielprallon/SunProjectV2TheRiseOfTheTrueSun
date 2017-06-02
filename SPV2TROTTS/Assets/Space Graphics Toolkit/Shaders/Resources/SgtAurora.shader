@@ -1,4 +1,6 @@
-﻿Shader "Hidden/SgtAurora"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Hidden/SgtAurora"
 {
 	Properties
 	{
@@ -81,7 +83,7 @@
 					// Clamp to 0..1
 					i.texcoord0.y = saturate(i.texcoord0.y * 10.0f);
 
-					o.vertex    = mul(UNITY_MATRIX_MVP, i.vertex);
+					o.vertex    = UnityObjectToClipPos(i.vertex);
 					o.texcoord0 = i.texcoord0.xy;
 					o.color     = i.color;
 #if SGT_A // FadeNear
